@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 import Category from './Category'
 import movie from '../../assets/movies.png'
 import serie from '../../assets/series.png'
@@ -12,14 +13,18 @@ const Index = () => {
 
   return (
     <Caterogies>
-      <Category
-        img={movie}
-        title="Movies"
-      />
-      <Category
-        img={serie}
-        title="Series"
-      />
+      <Link to="/movies">
+        <Category
+          img={movie}
+          title="Movies"
+        />
+      </Link>
+      <Link to="/series">
+        <Category
+          img={serie}
+          title="Series"
+        />
+      </Link>
     </Caterogies>
   )
 }

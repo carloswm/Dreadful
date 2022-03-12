@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 import logo from '../../assets/logo.png'
 
 const Index = ({ width }) => {
@@ -8,13 +9,13 @@ const Index = ({ width }) => {
   `
 
   return (
-    <>
+    <Link to="/">
       <Img
         src={ logo }
         alt="logo"
         width={ width }
       />
-    </>
+    </Link>
   )
 }
 

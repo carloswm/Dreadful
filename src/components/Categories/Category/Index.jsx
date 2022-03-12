@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 const Index = ({img, title}) => {
 
-  const Content = styled.button`
+  const Content = styled.div`
     display: flex;
     position: relative;
     padding: 0;
