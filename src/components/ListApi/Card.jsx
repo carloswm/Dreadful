@@ -1,5 +1,6 @@
 import React,{ useState, useEffect } from 'react'
 import styled from 'styled-components'
+import useFullPageLoader from '../../hooks/useFullPageLoader'
 
 const Card = () => {
 
@@ -45,12 +46,14 @@ const Card = () => {
   `
 
   const [ list, setList ] = useState([])
+  const [ loader, showLoader, hideLoader ] = useFullPageLoader()
 
   const fetchList = async() => {
     try {
+      showLoader()
       const res = await fetch( 'https://kitsu.io/api/edge/anime/' )
       const { data } = await res.json()
-      console.log(data)
+      hideLoader()
       setList(data)
     }
     catch (err) {
@@ -74,6 +77,7 @@ const Card = () => {
         </Card>
         )
       }
+      { loader }
     </>
   )
 }
