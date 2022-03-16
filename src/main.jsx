@@ -1,5 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Header from './components/Header'
+import Footer from './components/Footer'
 import {
   BrowserRouter,
   Routes,
@@ -13,12 +15,14 @@ import Series from './pages/Series'
 
 ReactDOM.render(
   <BrowserRouter>
+    <Header />
     <Routes>
       <Route path="/" element={<App />} />
       <Route index element={<Home />} />
       <Route path="/movies" element={<Movies />} />
       <Route path="/series" element={<Series />} />
     </Routes>
+    <Footer />
   </BrowserRouter>,
   document.getElementById('root')
 )

@@ -1,9 +1,10 @@
 import Header from '../../components/Header/Index'
+import ListApi from '../../components/ListApi'
 
 const Index = () => {
   return (
     <>
-      <Header />
+      <ListApi title="Popular Animes"/>
     </>
   )
 }

@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import Logo from '../Logo/Index'
 import Login from './Login/Index'
 import CategoryHeader from './CategoryHeader/Index'
+import Search from '../Search/Index'
 import { useLocation } from 'react-router-dom'
 
 const Index = () => {
@@ -26,11 +27,14 @@ const Index = () => {
   return (
     <>
       { location.pathname != '/' ?
-        <AuxHeader>
-          <Logo />
-          <CategoryHeader />
-          <Login />
-        </AuxHeader>
+        <>
+          <AuxHeader>
+            <Logo />
+            <CategoryHeader />
+            <Login />
+          </AuxHeader>
+          <Search />
+        </>
         :
         <MainHeader>
           <Logo />
