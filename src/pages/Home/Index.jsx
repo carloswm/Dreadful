@@ -1,6 +1,4 @@
-import Header from '../../components/Header'
-import Categories from '../../components/Categories'
-import Footer from '../../components/Footer'
+import Categories from '../../components/Categories/Index'
 
 const Index = () => {
   return (

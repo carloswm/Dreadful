@@ -1,5 +1,4 @@
-import Header from '../../components/Header/Index'
-import ListApi from '../../components/ListApi'
+import ListApi from '../../components/ListApi/Index'
 
 const Index = () => {
   return (

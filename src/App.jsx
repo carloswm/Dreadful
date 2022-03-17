@@ -1,4 +1,4 @@
-import Home from './pages/Home'
+import Home from './pages/Home/Index'
 import styled from 'styled-components'
 
 function App() {

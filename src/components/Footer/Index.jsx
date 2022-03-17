@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import Logo from '../Logo'
-import Links from './Links'
-import Stores from './Stores'
+import Logo from '../Logo/Index'
+import Links from './Links/Index'
+import Stores from './Stores/Index'
 
 const Index = () => {
 

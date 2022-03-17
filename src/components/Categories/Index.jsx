@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-import Category from './Category'
+import Category from './Category/Index'
 import movie from '../../assets/movies.png'
 import serie from '../../assets/series.png'
 

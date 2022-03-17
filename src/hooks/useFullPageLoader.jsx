@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import FullPageLoader from '../components/FullPageLoader'
+import FullPageLoader from '../components/FullPageLoader/Index'
 
 const useFullPageLoader = () => {
 
